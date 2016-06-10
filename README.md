@@ -4,7 +4,7 @@ configs and scripts for management of the Hackerspace's computer lab
 ##General Server Installation
 
 ### Server Network Config
-Update settings in `/etc/network/interfaces` and notify IT Dept to add to DNS
+Update settings in `/etc/network/interfaces` and notify IT Dept to add to DNS \n
 NOTE: The default comment at the top of the file has a second line that isn't commented that may cause an error.
 ```
 iface eth0 inet static
