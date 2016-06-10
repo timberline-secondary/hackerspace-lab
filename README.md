@@ -5,6 +5,7 @@ configs and scripts for management of the Hackerspace's computer lab
 
 ### Server Network Config
 Update settings in `/etc/network/interfaces` and notify IT Dept to add to DNS
+NOTE: The default comment at the top of the file has a second line that isn't commented that may cause an error.
 ```
 iface eth0 inet static
 address 192.168.3.3
