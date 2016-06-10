@@ -17,6 +17,9 @@ dns-nameservers 192.168.3.45
 [LDAP Authentication](https://help.ubuntu.com/lts/serverguide/openldap-server.html#openldap-auth-config)
 ```
 sudo apt install libnss-ldap
+```
+cn=admin,dc=hackerspace,dc=tbl
+```
 sudo dpkg-reconfigure ldap-auth-config
 sudo auth-client-config -t nss -p lac_ldap
 sudo pam-auth-update
