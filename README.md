@@ -14,6 +14,6 @@ dns-search example.com
 dns-nameservers 192.168.3.45
 ```
 ### LDAP
-[https://help.ubuntu.com/lts/serverguide/openldap-server.html#openldap-auth-config](LDAP Authentication)
+[LDAP Authentication](https://help.ubuntu.com/lts/serverguide/openldap-server.html#openldap-auth-config)
 
 
