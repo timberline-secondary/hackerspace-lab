@@ -26,5 +26,20 @@ sudo pam-auth-update
 
 ### Auto starting
 https://www.digitalocean.com/community/tutorials/how-to-configure-a-linux-service-to-start-automatically-after-a-crash-or-reboot-part-1-practical-examples#auto-start-checklist-for-systemd
+```
+sudo systemctl enable service.service
+sudo systemctl daemon-reload
+sudo systemctl restart service.service
+sudo reboot
+```
+
+Test it by checking if the process is running:
+`ps -ef | grep service`
+
+Kill it
+`ps -ef | grep service`
+
+And see that it starts back up automatically within a few seconds:
+`sudo kill -9 process_number`
 
 
