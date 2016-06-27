@@ -7,3 +7,10 @@ Modules location:
 
 Environments and Manifests:
 `/etc/puppetlabs/code/environments/`
+
+#New Module
+`mkdir -p hs_new_module_name/manifests
+# 
+
+`
+
