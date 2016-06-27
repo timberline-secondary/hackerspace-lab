@@ -27,3 +27,8 @@ sudo pam-auth-update
 ### Auto Starting Virtual Servers
 https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=850
 
+### Setup SSH Keys (from Lannister)
+[Open SSH Keys](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
+```
+ssh-copy-id <username>@<host>
+```
