@@ -9,6 +9,18 @@ Requires a CSV file with 3 columns: username, first_name, last_name
 
 `9912345,test,student`
 
+Then create the ldif file:
+
+`awk -F"," -f ldapimport.awk users.csv > users.ldif`
+
+And add users to ldap:
+
+`ldapadd -x -D "cn=admin,dc=hackerspace,dc=tbl" -w password users.ldif`
+-x  don't use SASL
+-D  _bindn_ us this to bind to the LDAP directory
+-w  _passwd_
+
+
 ##PXE Installation
 
 
