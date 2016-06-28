@@ -11,6 +11,14 @@ Environments and Manifests:
 Confdir
 `/etc/puppetlabs/puppet`
 
+## Certificates
+List all signed certs:
+`puppet cert --list`
+
+Revoke a cert:
+`puppet cert clean hostname.hackerspace.tbl`
+
+
 ##New Module
 ```
 mkdir -p hs_new_module/manifests
