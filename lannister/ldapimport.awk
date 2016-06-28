@@ -1,6 +1,6 @@
 BEGIN {
-  start_uid = 16000;
-  start_gid = 16000;
+  start_uid = 10010;
+  start_gid = 10010;
   i=0;
 }
 {
