@@ -17,9 +17,9 @@ And add users to ldap:
 
 ```
 ldapadd -x -D "cn=admin,dc=hackerspace,dc=tbl" -w password users.ldif
-# -x  don't use SASL
-# -D  _bindn_ us this to bind to the LDAP directory
-# -w  _passwd_
+# -x        don't use SASL
+# -D bindn  use this to bind to the LDAP directory
+# -w passwd 
 ```
 
 
