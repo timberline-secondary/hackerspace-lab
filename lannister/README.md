@@ -16,7 +16,7 @@ Then create the ldif file:
 And add users to ldap:
 
 ```
-ldapadd -x -D "cn=admin,dc=hackerspace,dc=tbl" -w password users.ldif
+ldapadd -x -D "cn=admin,dc=hackerspace,dc=tbl" -w password -f users.ldif
 # -x        don't use SASL
 # -D bindn  use this to bind to the LDAP directory
 # -w passwd 
