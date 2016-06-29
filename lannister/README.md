@@ -1,8 +1,7 @@
 #Lannister: LDAP and PXE install server
 
 ##LDAP
-Student uid start: 1000
-Student gid start: 1001
+Student uid start: yy000 (where yy is the two digit year the student account was created)
 
 ### Bulk user import
 Requires a CSV file with 3 columns: username, first_name, last_name
