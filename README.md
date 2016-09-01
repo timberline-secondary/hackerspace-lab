@@ -8,13 +8,14 @@ Update settings in `/etc/network/interfaces` and notify IT Dept to add to DNS
 
 NOTE: The default comment at the top of the file has a second line that isn't commented that can cause an error.
 ```
-iface eth0 inet static
-address 192.168.3.3
+iface ens32 inet static
+address 192.168.3.3 # This server's IP
 netmask 255.255.255.0
-gateway 192.168.3.1
+gateway 192.168.3.10
 dns-search example.com
 dns-nameservers 192.168.3.45
 ```
+After changing, restart the network interface: `sudo ifdown ens32 && sudo ifup ens32`
 ### LDAP
 [LDAP Authentication](https://help.ubuntu.com/lts/serverguide/openldap-server.html#openldap-auth-config)
 ```
