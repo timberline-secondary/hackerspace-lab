@@ -15,6 +15,9 @@ Confdir
 List all signed certs:
 `puppet cert --list`
 
+Remove from client:
+`find /home/hackerspace_admin/.puppetlabs/etc/puppet/ssl -name puppet.hackerspace.tbl.pem -delete`
+
 Revoke a cert:
 `puppet cert clean hostname.hackerspace.tbl`
 
