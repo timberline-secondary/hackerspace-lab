@@ -16,7 +16,7 @@ List all signed certs:
 `sudo /opt/puppetlabs/bin/puppet cert --list`
 
 Remove from client:
-`find /home/hackerspace_admin/.puppetlabs/etc/puppet/ssl -name puppet.hackerspace.tbl.pem -delete`
+`find /etc/puppetlabs/puppet/ssl -name tbl-hackerspace-2-s.hackerspace.tbl.pem -delete`
 
 Revoke a cert (via puppet server):
 `sudo /opt/puppetlabs/bin/puppet cert clean hostname.hackerspace.tbl`
