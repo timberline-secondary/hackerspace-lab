@@ -6,7 +6,9 @@ Student uid start: yy000 (where yy is the two digit year the student account was
 list users: `getent passwd`
 
 ### Bulk user import
-User `ldapbulkimport` script
+Use `ldapbulkimport` script:
+
+`sudo ./ldapbulimport` 
 
 ##PXE Installation
 
