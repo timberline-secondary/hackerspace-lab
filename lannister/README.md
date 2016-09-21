@@ -6,4 +6,4 @@ Use: https://github.com/tylerecouture/hs_ldap
 
 ##PXE Installation
 
-
+`/var/lib/tftpboot/`
