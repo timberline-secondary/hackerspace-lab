@@ -10,4 +10,7 @@ Use: https://github.com/tylerecouture/hs_ldap
 
 ### PXE Boot Menus
 `/var/lib/tftboot/ubuntu-installer/amd64/boot-screens`
-`/var/lib/tftboot/ubuntu-installer/amd64/boot-screens/vesamenu.c32`
+
+`/var/lib/tftboot/ubuntu-installer/amd64/boot-screens/txt.cfg`
+
+
