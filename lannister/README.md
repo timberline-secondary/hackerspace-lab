@@ -11,4 +11,7 @@ Use: https://github.com/tylerecouture/hs_ldap
 `/var/lib/tftboot/ubuntu-installer/amd64/boot-screens/txt.cfg`
 
 #### NFS Root
-`/srv/install/`
+`/srv/install/
+
+## ldap compiled without wrappers
+http://www.openldap.org/doc/admin24/install.html`
