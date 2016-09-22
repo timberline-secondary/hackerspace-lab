@@ -30,6 +30,6 @@ https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displa
 
 ### Setup SSH Keys (from Lannister)
 [Open SSH Keys](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
-```
-ssh-copy-id <username>@<host>
-```
+
+Relax the security on server: Change the /etc/ssh/sshd_conf file to have password authentication while you're adding ssh keys
+```ssh-copy-id <username>@<host>```
