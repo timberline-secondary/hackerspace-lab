@@ -2,6 +2,8 @@
 
 ##LDAP
 
+slapd connections? `pidof slapd | xargs lsof -a -p | wc -l`
+
 Restart slapd:  `sudo systemctl restart slapd.service`
 
 Use: https://github.com/tylerecouture/hs_ldap
