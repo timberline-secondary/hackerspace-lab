@@ -33,3 +33,7 @@ https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displa
 
 Relax the security on server: Change the /etc/ssh/sshd_conf file to have password authentication while you're adding ssh keys
 ```ssh-copy-id <username>@<host>```
+
+## Full boot drives
+-Check space: `df-h`
+-remove old kernels: sudo dpkg --purge linux-headers-4.4.0-24-generic` (use tab completion to see list of installed kernels)
