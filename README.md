@@ -37,5 +37,4 @@ Relax the security on server: Change the /etc/ssh/sshd_conf file to have passwor
 ## Full boot drives
 
 -Check space: `df-h`
-
--remove old kernels: `sudo dpkg --purge linux-headers-4.4.0-24-generic` (use tab completion to see list of installed kernels)
+-http://ubuntuhandbook.org/index.php/2016/05/remove-old-kernels-ubuntu-16-04/
