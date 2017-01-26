@@ -6,7 +6,7 @@ slapd connections? `pidof slapd | xargs lsof -a -p | wc -l`
 
 Restart slapd:  `sudo systemctl restart slapd.service`
 
-Use: https://github.com/tylerecouture/hs_ldap
+Use: https://github.com/timberline-secondary/hs-ldap
  
 
 ##PXE Installation
