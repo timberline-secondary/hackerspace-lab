@@ -1,10 +1,8 @@
 
 # File Server
-/nfshome
+`/nfshome`
 
 Backs up to Stark via rsync
 
+https://github.com/timberline-secondary/hackerspace-lab/tree/master/stark
 
-
-## rsync
-[https://help.ubuntu.com/community/rsync]
