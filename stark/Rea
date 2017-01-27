@@ -1,0 +1,9 @@
+
+# Back up server
+
+2TB drive mounted to bu_drive
+
+Interesting files:
+`sudo crontab -e`
+
+On Tyrell: `/var/log/rsync.log`
