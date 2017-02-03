@@ -38,3 +38,9 @@ Relax the security on server: Change the /etc/ssh/sshd_conf file to have passwor
 
 -Check space: `df-h`
 -http://ubuntuhandbook.org/index.php/2016/05/remove-old-kernels-ubuntu-16-04/
+
+### Unnattended Upgrades
+/etc/apt/apt.conf.d/50unattended-upgrades
+
+
+
