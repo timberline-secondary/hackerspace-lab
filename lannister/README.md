@@ -20,3 +20,7 @@ Use: https://github.com/timberline-secondary/hs-ldap
 
 ## ldap compiled without wrappers
 http://www.openldap.org/doc/admin24/install.html`
+
+
+#### Presees Files
+/var/www/html/preseeds/ubuntu-desktop.seed
