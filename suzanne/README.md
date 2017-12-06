@@ -1,5 +1,15 @@
+# Suzanne and other netrendering slaves
 
-# Suzanne
+1. Make sure they have the same version of Blender installed as the clients
+1. For GPU slaves, place the updated [netrender addon](https://github.com/timberline-secondary/Blender-Network-Render-Additions) into `/usr/share/blender/#.##/scripts`
+1. Install the systemd unit:
+   1. Download the service file:`sudo wget https://raw.githubusercontent.com/timberline-secondary/hackerspace-lab/master/suzanne/netrender-slave.service /etc/systemd/system/`
+   1. Enable the service: `sudo systemctl enable netredner-slave`
+   1. Start the service: `sudo systemctl start netrender-slave`
+   1. Test to make sure it works (it should appear as a slave under the master: http://suzanne:8001/)
+   1. Reboot the computer to make sure the slave starts up on reboot.  Sometimes the master takes a while to drop old slaves, so it may appear as a second slave under the same name)
+
+# Suzanne -- OLD --
 Suzanne is our network render server. (dual 1080 GPUs)
 
 ## Screens
