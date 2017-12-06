@@ -7,9 +7,8 @@ Documentation=https://unix.stackexchange.com/a/408848/5132
 [Service]
 Type=simple
 WorkingDirectory=/opt/netrender-startup
-#User=hackerspace_admin
 #Environment=FLAGS=slaveGPU.blend --addons netrender -a -noaudio -nojoystick
-ExecStart=/usr/bin/blender -b slaveGPU.blend --addons netrender -a -noaudio -no$
+ExecStart=/usr/bin/blender -b slaveGPU.blend --addons netrender -a -noaudio -nojoystick
 
 [Install]
 WantedBy=multi-user.target
