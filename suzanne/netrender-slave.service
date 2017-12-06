@@ -3,12 +3,13 @@
 [Unit]
 Description=Blender netrender slave manager
 Documentation=https://unix.stackexchange.com/a/408848/5132
+Wants=network-online.target
+After=network-online.target
 
 [Service]
 Type=simple
 WorkingDirectory=/opt/netrender-startup
-#Environment=FLAGS=slaveGPU.blend --addons netrender -a -noaudio -nojoystick
-ExecStart=/usr/bin/blender -b slaveGPU.blend --addons netrender -a -noaudio -nojoystick
+ExecStart=/usr/bin/blender -b slaveGPU.blend --addons netrender -a -noaudio -nojoystick --enable-autoexec
 
 [Install]
 WantedBy=multi-user.target
