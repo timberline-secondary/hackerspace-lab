@@ -1,7 +1,9 @@
 # Suzanne and other netrendering slaves
 
-1. Make sure they have the same version of Blender installed as the clients
+# Setting up a netrender slave
+1. Make sure the computer has the same version of Blender installed as the clients
 1. For GPU slaves, place the updated [netrender addon](https://github.com/timberline-secondary/Blender-Network-Render-Additions) into `/usr/share/blender/#.##/scripts`
+1. Create a slaveGPU.blend file with the same version of blender, with desired netrender slave settings.  Save it to: `/opt/netrender-startup/slaveGPU.blend`
 1. Install the systemd unit:
    1. Download the service file:`sudo wget https://raw.githubusercontent.com/timberline-secondary/hackerspace-lab/master/suzanne/netrender-slave.service /etc/systemd/system/`
    1. Enable the service: `sudo systemctl enable netredner-slave`
