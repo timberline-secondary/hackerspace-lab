@@ -1,7 +1,8 @@
 # hackerspace-lab
 configs and scripts for management of the Hackerspace's computer lab
 
-##General Server Installation
+## General Server Installation
+TODO: Do this via puppet....
 
 ### Server Network Config
 Update settings in `/etc/network/interfaces` and notify IT Dept to add to DNS 
