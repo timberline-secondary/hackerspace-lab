@@ -1,4 +1,5 @@
 # Suzanne and other netrendering slaves
+transitioning to use systemd netrender services: https://github.com/timberline-secondary/blender-netrender-service
 
 ## Setting up a netrender slave
 1. Make sure the computer has the same version of Blender installed as the clients
