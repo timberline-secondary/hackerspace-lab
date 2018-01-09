@@ -30,15 +30,12 @@ There are screens on:
 1. `screen -S master`
 2. `/opt/netrender-startup/master.sh`
 3. Ctrl + A, D  # This will detach you from the screen and go back to the normal terminal.
-4. `screen -S slave`
-5. `/opt/netrender-startup/slave.sh`
-6. Ctrl + A, D
+4. The slave is managed with a [systemd service](https://github.com/timberline-secondary/blender-netrender-service)
 7. Test to make sure things are working by going to the netrender master page: http://suzanne:8001/
 
 ### Start Slave on Renderman
 
-1. ssh to `tbl-renderman`
-2. start the slave screen and run the slave instance of blender as above.
+tbl-renderman is now managing its netrender slave with a [systemd service](https://github.com/timberline-secondary/blender-netrender-service)
 
 ### Troubleshooting
 
