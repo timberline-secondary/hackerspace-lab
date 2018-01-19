@@ -13,3 +13,6 @@ logs: `/opt/jetbrains/logs/`
 Need this?
 `<license_server_home>\bin\license-server.bat configure --jetty.virtualHosts.names=proxy-server.mydomain.com`
 https://www.jetbrains.com/help/license_server/setting_host_and_port.html
+
+## SAMBA Share for TV Displays
+
