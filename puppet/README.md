@@ -1,5 +1,11 @@
 192.X.X.6
 
+## Control Repo
+
+https://github.com/timberline-secondary/hackerspace-control-repo
+
+## Puppet Master Setup
+
     curl -O https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
     sudo dpkg -i puppetlabs-release-pc1-xenial.deb
     sudo apt-get update
