@@ -12,9 +12,9 @@ NOTE: The default comment at the top of the file has a second line that isn't co
 iface ens32 inet static
 address 192.168.3.3 # This server's IP
 netmask 255.255.255.0
-gateway 192.168.3.10
-dns-search example.com
-dns-nameservers 192.168.3.45
+gateway 192.168.3.1
+dns-search hackerspace.tbl sd72.bc.ca
+dns-nameservers 192.168.3.10
 ```
 After changing, restart the network interface: `sudo ifdown ens32 && sudo ifup ens32`
 ### LDAP
