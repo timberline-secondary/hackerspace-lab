@@ -38,6 +38,26 @@ https://github.com/timberline-secondary/hackerspace-control-repo
     #test
     puppet agent -t
     
+## Version Control and Github
+
+Create this file in: `/etc/puppetlabs/r10k/r10k.yaml`
+```
+---
+:cachedir: '/var/cache/r10k'
+
+:sources:
+   :hackerspace:
+      remote: 'https://github.com/timberline-secondary/hackerspace-control-repo$
+      basedir: '/etc/puppetlabs/code/environments'
+```
+
+Deploy the repo
+
+    r10k deploy environment -p
+    cd /etc/puppetlabs/code/environments
+    ls
+    cd production
+    
 
 ## Puppet Environments
 https://github.com/timberline-secondary/hs-puppet-environments
