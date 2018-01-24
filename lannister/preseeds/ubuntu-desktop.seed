@@ -1,0 +1,30 @@
+# /var/www/html/preseeds/ubuntu-desktop.seed
+# https://help.ubuntu.com/16.04/installation-guide/example-preseed.txt
+
+#### Contents of the preconfiguration file (for xenial)
+
+###########################################
+#
+# TASK SELECTION
+#
+############################################
+
+#blank for minimal install for testing
+#tasksel tasksel/first multiselect
+tasksel tasksel/first multiselect ubuntu-desktop
+#tasksel tasksel/first multiselect ubuntu-live
+#tasksel tasksel/first multiselect lamp-server, print-server
+#tasksel tasksel/first multiselect kubuntu-desktop
+
+###########################################
+#
+# ADDITIONAL SEED FILES:
+#
+#  common.seed		settings common to all configurations
+#  custom.seed		scripts
+#  packages.seed	individual packages
+#
+############################################
+
+# include additional seed files, seperated for organization
+d-i preseed/include string common.seed packages.seed custom.seed
