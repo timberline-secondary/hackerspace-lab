@@ -1,0 +1,28 @@
+ 
+#ubiquity ubiquity/success_command string in-target ...
+
+###########################################
+#
+# POST INSTALL SCRIPTS
+#
+############################################
+
+# This APT_INSTALL to install pkgs; IN-TARGET to run commands at installed root
+#d-i preseed/late_command string apt-install nano wget
+
+# Add puppet repository (via .deb) and install puppet agent, 
+#  then edit conf to auto start puppet, set the puppet environment, run on reboot via cron
+#  Finally, change greeter options so don't need to reboot after puppet runs
+d-i preseed/late_command string \
+in-target wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb ; \
+in-target dpkg -i /puppetlabs-release-pc1-xenial.deb ; \
+in-target apt update ; \
+in-target apt install puppet-agent ; \
+in-target rm /puppetlabs-release-pc1-xenial.deb ; \
+in-target bash -c "echo 'START=yes' >> /etc/puppetlabs/puppet/puppet.conf" ; \
+in-target bash -c "echo 'environment=production' >> /etc/puppetlabs/puppet/puppet.conf" ; \
+in-target crontab -l > tmpcron ; \
+in-target bash -c "echo '@reboot /opt/puppetlabs/bin/puppet agent -t' >> tmpcron" ; \
+in-target crontab tmpcron; rm tmpcron ; \
+in-target mkdir /etc/lightdm ; \
+in-target bash -c "echo -e '[SeatDefaults]\ngreeter-show-manual-login=true\ngreeter-hide-users=true' >> /etc/lightdm/lightdm.conf"
