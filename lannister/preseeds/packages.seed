@@ -6,4 +6,4 @@
 ############################################
 
 # Custom packages to include
-d-i pkgsel/include string wget nano
+d-i pkgsel/include string wget nano ssh
