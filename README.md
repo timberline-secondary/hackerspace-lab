@@ -1,6 +1,12 @@
 # hackerspace-lab
 configs and scripts for management of the Hackerspace's computer lab
 
+## Recovering lost Unity Launchers...
+```
+rm -r ~/.config/compix-1
+kill -9 -1
+```
+
 ## General Server Installation
 TODO: Do this via puppet....
 
