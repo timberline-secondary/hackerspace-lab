@@ -22,5 +22,5 @@ User: pi, PW: live
 
 For adding images, password: pi-slideshow
 
-
+Scripts: https://github.com/timberline-secondary/hackerspace-scripts/tree/master/bin/TV_Displays
 
