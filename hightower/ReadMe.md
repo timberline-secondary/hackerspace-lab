@@ -24,3 +24,10 @@ For adding images, password: pi-slideshow
 
 Scripts: https://github.com/timberline-secondary/hackerspace-scripts/tree/master/bin/TV_Displays
 
+nightly reboot with:
+```
+crontab - e
+0 6   *   *   *    /sbin/shutdown -r +5
+```
+
+Set host and timezone with: `sudo raspi-config`
