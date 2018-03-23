@@ -15,4 +15,12 @@ Need this?
 https://www.jetbrains.com/help/license_server/setting_host_and_port.html
 
 ## SAMBA Share for TV Displays
+Raspberry Pi Slideshow: 
+http://www.binaryemotions.com/digital-signage/raspberry-slideshow/
+
+User: pi, PW: live
+
+For adding images, password: pi-slideshow
+
+
 
