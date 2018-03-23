@@ -27,7 +27,7 @@ Scripts: https://github.com/timberline-secondary/hackerspace-scripts/tree/master
 nightly reboot with:
 ```
 crontab - e
-0 6   *   *   *    /sbin/shutdown -r +5
+sudo 0 6   *   *   *    /sbin/shutdown -r +5
 ```
 
 Set host and timezone with: `sudo raspi-config`
