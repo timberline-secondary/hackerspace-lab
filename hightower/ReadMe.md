@@ -31,3 +31,10 @@ sudo 0 6   *   *   *    /sbin/shutdown -r +5
 ```
 
 Set host and timezone with: `sudo raspi-config`
+
+## Grafana
+
+Install: http://docs.grafana.org/installation/debian/
+
+Prometheus:
+https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
