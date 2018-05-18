@@ -3,7 +3,7 @@ configs and scripts for management of the Hackerspace's computer lab
 
 ## Recovering lost Unity Launchers...
 ```
-rm -r ~/.config/compix-1
+rm -r ~/.config/compiz-1 ~/.compiz ~/.cache
 kill -9 -1
 ```
 
