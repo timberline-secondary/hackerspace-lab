@@ -2,9 +2,9 @@
 configs and scripts for management of the Hackerspace's computer lab
 
 ## Recovering lost Unity Launchers...
+ssh into Tyrell and:
 ```
-rm -r ~/.config/compiz-1 ~/.compiz ~/.cache
-kill -9 -1
+sudo rm -r /nfshome/9912345/.cache
 ```
 
 ## General Server Installation
