@@ -18,9 +18,5 @@ Use: https://github.com/timberline-secondary/hs-ldap
 #### NFS Root
 `/srv/install/
 
-## ldap compiled without wrappers
-http://www.openldap.org/doc/admin24/install.html`
-
-
-#### Presees Files
+#### Preseed Files
 /var/www/html/preseeds/ubuntu-desktop.seed
