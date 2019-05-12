@@ -19,13 +19,20 @@ tftp config file: `/etc/default/tftp-hpa`
 sets TFTP_DIRECTORY root to: `/var/lib/tftpboot/`
 
 #### PXE Boot Menu
-`pxelinux.cfg -> ubuntu-installer/amd64/pxelinux.cfg`
-`amd64/pxelinux.cfg -> boot-screens/syslinux.cfg`
 
-`/var/lib/tftboot/ubuntu-installer/amd64/boot-screens/txt.cfg`
+##### /var/lib/tftpboot/pxelinux.cfg
+`
+# D-I config version 2.0
+# search path for the c32 support libraries (libcom32, libutil etc.)
+path boot-screens/
+include boot-screens/menu.cfg
+default boot-screens/vesamenu.c32
+prompt 0
+timeout 0
+`
 
 #### NFS Root
-`/srv/install/
+`/srv/install/`
 
 #### Preseed Files
-/var/www/html/preseeds/ubuntu-desktop.seed
+`/var/www/html/preseeds/ubuntu-desktop.seed`
