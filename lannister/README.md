@@ -10,7 +10,7 @@ Use: https://github.com/timberline-secondary/hs-ldap
  
 
 ## PXE Installation
-https://help.ubuntu.com/community/Installation/LocalNet
+https://help.ubuntu.com/community/Installation/LocalNet#From_a_local_server
 
 ### DHCP
 DHCP server (PFSense; IP * * * .10) points to Lannister at `/pxelinux.0`
