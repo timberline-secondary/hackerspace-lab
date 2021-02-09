@@ -11,6 +11,12 @@ Use: https://github.com/timberline-secondary/hs-ldap
 
 ## PXE Installation
 
+# Live Server Install (since 20.04)
+
+https://ubuntu.com/server/docs/install/autoinstall-quickstart
+https://ubuntu.com/server/docs/install/autoinstall
+https://ubuntu.com/server/docs/install/autoinstall-reference
+
 ### DHCP
 DHCP server (PFSense; IP * * * .10) points to Lannister at `/pxelinux.0`
 
