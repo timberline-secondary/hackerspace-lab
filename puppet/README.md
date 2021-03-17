@@ -5,16 +5,35 @@ hostname: puppet
 
 https://puppet.com/docs/puppet/7.5/system_requirements.html
 
-* sudo apt install ntp
-* sudo ufw allow ssh
-* sudo ufw enable
-* sudo ufw allow from 192.168.#.0/24 to any port 8140  # Allow our subnet to connect on the port puppet uses
+* `sudo apt install ntp`
+* `sudo ufw allow ssh`
+* `sudo ufw enable`
+* `sudo ufw allow from 192.168.#.0/24 to any port 8140`  # Allow our subnet to connect on the port puppet uses
 
-### Install puppet
+### Install puppet server
 
 https://puppet.com/docs/puppet/7.5/install_puppet.html
 
 * Logout after installing puppetserver before running it (otherwise it won't be in your PATH and will say not installed)
+* `systemctl enable puppetserver`
+
+### Config
+
+* Naive autosigning of certs: add `autosign = true` to the [server] section of /etc/puppetlabs/puppet/puppet.conf
+
+### r10k
+
+* `sudo apt install ruby`
+* `gen install r10k`
+* add to /etc/puppetlabs/puppet/puppet.conf:  
+```
+[main]
+    dns_alt_names = puppet.hackerspace.tbl
+
+[agent]
+    server = puppet.hackerspace.tbl
+```  
+* 
 
 ## Control Repo
 
