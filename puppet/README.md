@@ -1,4 +1,20 @@
-192.X.X.6
+IP: 192.168.#.6
+hostname: puppet
+
+### Setup
+
+https://puppet.com/docs/puppet/7.5/system_requirements.html
+
+* sudo apt install ntp
+* sudo ufw allow ssh
+* sudo ufw enable
+* sudo ufw allow from 192.168.#.0/24 to any port 8140  # Allow our subnet to connect on the port puppet uses
+
+### Install puppet
+
+https://puppet.com/docs/puppet/7.5/install_puppet.html
+
+* Logout after installing puppetserver before running it (otherwise it won't be in your PATH and will say not installed)
 
 ## Control Repo
 
