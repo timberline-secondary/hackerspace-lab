@@ -34,6 +34,6 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
 
 ### Adding and removing art
 
-Art can be added through the Hackerspace's `control-panel` https://github.com/timberline-secondary/hackerspace-scripts-2)
+Art can be added through the Hackerspace's `control-panel` here https://github.com/timberline-secondary/hackerspace-scripts-2
 
 We only use videos (allows us to display in alphabetical order), so all images, after adding, need to be combined into a video using the `control-panel`, and then saved to the TV's samba share (or overwritten if new art is added and new video created for them including the new art)
