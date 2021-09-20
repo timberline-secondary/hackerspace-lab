@@ -11,7 +11,7 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
 ### Setup Instructions
 
 1. download the raspberry slideshow image -- currently using v14.0 from here: https://www.binaryemotions.com/__2021/rs-14.0-donors.zip
-1. download Raspberry Pi Imager from here (rse v1.6.2+): https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
+1. download Raspberry Pi Imager from here (use v1.6.2+): https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
 1. use the disk app in ubuntu and remove all partitions from an sd card, leaving only free space
 2. open raspberry pi imager and in operating system choose custom and use the previously downloaded *.img file (raspberry slideshow image)
 3. for storage choose the SD card
