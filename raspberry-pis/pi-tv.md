@@ -61,7 +61,8 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
     }
     ```
     
-4. `sudo reboot`
+4. `rfkill unblock 0`   
+5. `sudo reboot`
 
 ### Adding and removing art
 
