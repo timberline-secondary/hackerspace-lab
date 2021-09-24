@@ -58,7 +58,7 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
         ssid="<NETWORK NAME HERE>"
         psk="<NETWORK PASSWORD HERE IN PLAINTEXT>"
         key_mgmt=WPA-PSK
-        
+    }
     ```
     
 4. `sudo reboot`
