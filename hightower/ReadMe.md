@@ -20,3 +20,7 @@ sudo 0 6   *   *   *    /sbin/shutdown -r +5
 
 Set host and timezone with: `sudo raspi-config`
 
+## CUPS Server
+
+http://hightower:631/printers/
+
