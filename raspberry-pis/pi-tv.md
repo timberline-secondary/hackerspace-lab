@@ -64,6 +64,45 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
 4. `rfkill unblock 0`   
 5. `sudo reboot`
 
+### Add crontab turning off/on display
+
+1. create `off.py` in /home/pi
+2. paste the following into `off.py`:
+    
+    #### off.py
+    ```
+    from subprocess import run
+    
+    run('vcgencmd display_power 0', shell=True)
+    ```
+    
+3. create `on.py` in /home/pi
+4. paste the following into `on.py`:
+    
+    #### on.py
+    ```
+    from subprocess import run
+    
+    run('vcgencmd display_power 1', shell=True)
+    ```
+    
+5. run `sudo crontab -e` and paste the following:
+    
+    #### crontab
+    ```
+    ...
+    
+    # USING GMT NOT PST!!
+
+    # 4 pm || 16:00
+    00 00 * * * /usr/bin/python3 /home/pi/off.py
+
+    # 7 am || 07:00
+    00 15 * * * /usr/bin/python3 /home/pi/on.py
+    ```
+    
+6. Reboot & you're done!
+
 ### Adding and removing art
 
 Art can be added through the Hackerspace's `control-panel` here https://github.com/timberline-secondary/hackerspace-scripts-2
