@@ -66,42 +66,21 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
 
 ### Add crontab turning off/on display
 
-1. create `off.py` in /home/pi
-2. paste the following into `off.py`:
-    
-    #### off.py
-    ```
-    from subprocess import run
-    
-    run('vcgencmd display_power 0', shell=True)
-    ```
-    
-3. create `on.py` in /home/pi
-4. paste the following into `on.py`:
-    
-    #### on.py
-    ```
-    from subprocess import run
-    
-    run('vcgencmd display_power 1', shell=True)
-    ```
-    
-5. run `sudo crontab -e` and paste the following:
+1. change the timezone to America/Vancouver in raspi-config under localization options
+2. run `sudo crontab -e` and paste the following:
     
     #### crontab
     ```
     ...
-    
-    # USING GMT NOT PST!!
 
     # 4 pm || 16:00
-    00 00 * * * /usr/bin/python3 /home/pi/off.py
+    00 16 * * * /usr/bin/vcgencmd display_power 0
 
     # 7 am || 07:00
-    00 15 * * * /usr/bin/python3 /home/pi/on.py
+    00 07 * * * /usr/bin/vcgencmd display_power 1
     ```
     
-6. Reboot & you're done!
+3. Reboot & you're done!
 
 ### Adding and removing art
 
