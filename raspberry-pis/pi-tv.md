@@ -64,6 +64,24 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
 4. `rfkill unblock 0`   
 5. `sudo reboot`
 
+### Add crontab turning off/on display
+
+1. change the timezone to America/Vancouver in raspi-config under localization options
+2. run `sudo crontab -e` and paste the following:
+    
+    #### crontab
+    ```
+    ...
+
+    # 4 pm || 16:00
+    00 16 * * * /usr/bin/vcgencmd display_power 0
+
+    # 7 am || 07:00
+    00 07 * * * /usr/bin/vcgencmd display_power 1
+    ```
+    
+3. Reboot & you're done!
+
 ### Adding and removing art
 
 Art can be added through the Hackerspace's `control-panel` here https://github.com/timberline-secondary/hackerspace-scripts-2
