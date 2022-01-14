@@ -74,10 +74,10 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
     ...
 
     # 4 pm || 16:00
-    00 16 * * * /usr/bin/vcgencmd display_power 0
+    00 16 * * * /usr/bin/bash -c "/usr/bin/echo 'standby 0' | /usr/bin/cec-client -s -d 1"
 
     # 7 am || 07:00
-    00 07 * * * /usr/bin/vcgencmd display_power 1
+    00 07 * * * /usr/bin/bash -c "/usr/bin/echo 'on 0' | /usr/bin/cec-client -s -d 1"
     ```
     
 3. Reboot & you're done!
