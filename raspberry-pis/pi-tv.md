@@ -28,6 +28,10 @@ OS: [Raspbery Pi Slideshow Donor's Edition](https://www.binaryemotions.com/raspb
     smb.share: //hightower/tv1
     smb.username: pi-slideshow
     smb.password: hackerberry
+    
+    # Remote media refresh.
+    # Values yes|no.
+    media.refresh: yes
     ```
 
 10. Move media.conf to `/var/lib/rs/media.conf` on the pi and remove USB stick.
