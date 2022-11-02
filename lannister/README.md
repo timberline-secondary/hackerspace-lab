@@ -26,8 +26,7 @@ Since downloading from link, Ubuntu updates break our download since they remove
 wget http://releases.ubuntu.com/20.04/ubuntu-20.04.X-live-server-amd64.iso (replace X)
 sudo mkdir /var/lib/tftpboot/installers/ubuntu/20.04.X
 sudo mount -r ubuntu-20.04.X-live-server-amd64.iso /mnt 
-sudo cp /mnt/casper/ /var/lib/tftpboot/installers/ubuntu/20.04.2/
-sudo cp /mnt/casper/vmlinuz/initrd /var/lib/tftpboot/installers/ubuntu/20.04.2/
+sudo cp -r /mnt/casper/ /var/lib/tftpboot/installers/ubuntu/20.04.X/
 
 ```
 
@@ -39,8 +38,8 @@ Change these lines:
 
         menu label Ubuntu 20.04.X
         menu default
-        kernel installers/ubuntu/20.04.X/vmlinuz
-        initrd installers/ubuntu/20.04.X/initrd
+        kernel installers/ubuntu/20.04.X/casper/vmlinuz
+        initrd installers/ubuntu/20.04.X/casper/initrd
         append root=/dev/ram0 ramdisk_size=1500000 ip=dhcp url=http://releases.ubuntu.com/20.04/ubuntu-20.04.X-live-server-amd64.iso autoinstall auto=true interface=auto ds=nocloud-net;s=http://192.168.43.3/preseeds/20.04/
 
 
